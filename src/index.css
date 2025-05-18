@@ -112,6 +112,10 @@ body {
 
 /* Tablet view */
 @media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 40px 0;
+  }
+  
   .container {
     padding: 0 2rem;
   }
@@ -132,8 +136,21 @@ body {
   }
 
   .cards button {
-    width: 80%;
-    bottom: 100px;
+    width: 75%;
+    padding: 20px 0;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: -37px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .cards .title {
+    padding-top: 30px;
   }
 }
 
