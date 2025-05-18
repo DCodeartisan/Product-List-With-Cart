@@ -5,7 +5,7 @@ function Cards( {image, title, description, price} ) {
   return (
     <div className="cards">
         <img src={image} alt="" />
-        <br /><button><img src="./src/assets/images/icon-add-to-cart.svg" alt=""/><span className="button-text">Add to Cart</span></button>
+        <br /><button><img src="/icon-add-to-cart.svg" alt=""/><span className="button-text">Add to Cart</span></button>
         <p className="title">{title}</p>
         <h3>{description}</h3>
         <p className="price">{price}</p>
