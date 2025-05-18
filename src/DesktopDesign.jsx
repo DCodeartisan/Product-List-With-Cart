@@ -12,7 +12,7 @@ function DesktopDesign() {
             <CartResult />
           </div>
     </div>
-  )
+  );
 }
 
 export default DesktopDesign

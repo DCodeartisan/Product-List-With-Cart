@@ -1,23 +1,23 @@
 import Cards from "./Cards"
+import CartData from "./CartData"
 
 function Cart() {
   return (
-    <div >
-      <h1>Desserts</h1>
-        <div className="cards-grid-3-columns">
-            <Cards image='/image-waffle-desktop.jpg' title='Waffle' description='Waffle with Berries' price={`$6.50`} />
-            <Cards image='/image-creme-brulee-desktop.jpg' title='Crème brûlée' description='Vanilla Bean Crème Brûlée' price={`$7.00`} />
-            <Cards image='/image-macaron-desktop.jpg' title='Macaron' description='Macaron Mix of Five' price={`$8.00`} />
-            <Cards image='/image-tiramisu-desktop.jpg' title='Tiramisu' description='Classic Tiramisu' price={`$5.50`} />
-            <Cards image='/image-baklava-desktop.jpg' title='Baklava' description='Pistachio Baklava' price={`$4.00`} />
-            <Cards image='/image-meringue-desktop.jpg' title='Pie' description='Lemon Meringue Pie' price={`$5.00`} />
-            <Cards image='/image-cake-desktop.jpg' title='Cake' description='Red Velvet Cake' price={`$4.50`} />
-            <Cards image='./image-brownie-desktop.jpg' title='Brownie' description=' Salted Caramel Brownie' price={`$4.50`} />
-            <Cards image='./image-panna-cotta-desktop.jpg' title='Panna Cotta' description='Vanilla Panna Cotta' price={`$6.50`} />
-        
-        </div>
+    <div className="cart">
+      <h1>Dessert</h1>
+      <div className="cards-grid-3-columns">
+        {CartData.map((item) => (
+          <Cards
+            key={item.id}
+            image={item.image}
+            title={item.title}
+            description={item.description}
+            price={`$${item.price.toFixed(2)}`}
+          />
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Cart
+export default Cart;
