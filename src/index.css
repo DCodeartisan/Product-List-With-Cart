@@ -149,6 +149,10 @@ body {
     gap: 8px;
   }
 
+  .button-text {
+    padding: 0 2px;
+  }
+
   .cards .title {
     padding-top: 30px;
   }
