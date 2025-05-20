@@ -111,7 +111,7 @@ body {
   padding-top: 15px;
 }
 
-.cart-items-list-description {
+.cart-items-list-description, .modal-content-list-description {
   font-size: 1rem;
   font-weight: 600;
 }
@@ -128,18 +128,18 @@ body {
   width: 100%; 
 }
 
-.cart-items-list-quantity {
+.cart-items-list-quantity, .modal-content-list-quantity {
   color: hsl(14, 86%, 42%);
   font-weight: 600;
   font-size: 0.9rem;
 }
 
-.cart-items-list-price, .cart-items-list-price-total {
+.cart-items-list-price, .cart-items-list-price-total, .modal-content-list-price, .modal-content-list-price-total {
   color: hsl(12, 20%, 44%);
   font-size: 0.9rem;
 }
 
-.cart-items-list-price-total{
+.cart-items-list-price-total, .modal-content-list-price-total {
   font-weight: 600;
 }
 
@@ -187,14 +187,14 @@ body {
   margin-bottom: 30px;
 }
 
-.cart-result button {
+.cart-result button, .modal-content button  {
   width: 100%;
   font-size: 0.9rem;
   color: #ccc;
   font-weight: 700;
   border: 1px solid hsl(14, 86%, 42%);
   border-radius: 100px;
-  padding: 18px 0;
+  padding: 14px 0;
   background-color: hsl(14, 86%, 42%);
   cursor: pointer; 
 }
@@ -233,10 +233,60 @@ body {
 
 .modal-content {
   background: white;
-  padding: 40px;
+  padding: 30px;
   border-radius: 10px;
-  max-width: 500px;
-  text-align: center;
+}
+
+.modal-content-list {
+  padding: 0 20px 0 20px;
+  border-radius: 8px;
+  background-color: hsl(26, 54%, 97%);
+  margin-bottom: 25px;
+}
+
+.modal-content-list ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.modal-content-details {
+  display: flex;
+  padding: 20px;
+}
+
+.modal-content-details img {
+  margin-left: -20px;
+  padding: 0 15px 0 0;
+  width: 45px;
+}
+
+.modal-content-list-price {
+  padding-right: 70px;
+}
+
+.modal-content h2 {
+  padding: 10px 0;
+}
+
+.modal-content p {
+  font-size: 0.82rem;
+  color: hsl(12, 20%, 44%);
+  font-weight: 500;
+  padding: 0 0 20px 0;
+}
+
+.modal-content-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%;
+  padding: 15px 0;
+}
+
+.modal-content-total p {
+  padding: 10px 0;
+  color: hsl(12, 20%, 44%);
+  font-weight: 600;
 }
 
 /* Tablet view */
