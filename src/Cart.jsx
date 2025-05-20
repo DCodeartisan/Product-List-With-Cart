@@ -1,10 +1,9 @@
 import Cards from "./Cards"
 import CartData from "./CartData"
-
-function Cart() {
+function Cart({ handleAddToCart }) {
   return (
     <div className="cart">
-      <h1>Dessert</h1>
+      <h1>Desserts</h1>
       <div className="cards-grid-3-columns">
         {CartData.map((item) => (
           <Cards
@@ -12,7 +11,8 @@ function Cart() {
             image={item.image}
             title={item.title}
             description={item.description}
-            price={`$${item.price.toFixed(2)}`}
+            price={item.price}
+            onAdd={() => handleAddToCart(item)}
           />
         ))}
       </div>

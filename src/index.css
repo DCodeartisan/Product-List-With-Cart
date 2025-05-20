@@ -90,6 +90,114 @@ body {
   padding: 0 5px;
 }
 
+.cart-result {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.cart-result h2 {
+  color: hsl(14, 86%, 42%);
+  padding-bottom: 20px;
+}
+
+.cart-result li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.cart-items-list {
+  padding-top: 15px;
+}
+
+.cart-items-list-description {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cart-items-list-space {
+  padding: 0.5px 0;
+}
+
+.cart-items-list-price-description{
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%; 
+}
+
+.cart-items-list-quantity {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cart-items-list-price, .cart-items-list-price-total {
+  color: hsl(12, 20%, 44%);
+  font-size: 0.9rem;
+}
+
+.cart-items-list-price-total{
+  font-weight: 600;
+}
+
+.cart-items-list img {
+  width: 0.85rem;
+  padding: 1px;
+  border: 1px solid hsl(12, 18%, 40%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cart-items-list-line {
+  padding-top: 15px;
+}
+
+.cart-result-total {
+  padding: 20px 0;
+}
+
+.cart-result-total p {
+  margin-top: -20px;
+  color: hsl(12, 20%, 44%);
+  font-weight: 600;
+}
+
+.cart-result-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%; 
+}
+
+.cart-result-total h2 {
+  color: hsl(0, 0%, 0%)
+}
+
+.carbon-neutral {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: hsl(26, 54%, 97%);
+  width: 100%;
+  padding: 18px 0;
+  margin-bottom: 30px;
+}
+
+.cart-result button {
+  width: 100%;
+  font-size: 0.9rem;
+  color: #ccc;
+  font-weight: 700;
+  border: 1px solid hsl(14, 86%, 42%);
+  border-radius: 100px;
+  padding: 18px 0;
+  background-color: hsl(14, 86%, 42%);
+  cursor: pointer; 
+}
+
 .cart-result-default {
   background-color: hsl(0, 0%, 100%);
   color: hsl(14, 86%, 42%);
@@ -108,6 +216,26 @@ body {
 .cart-result-default-view p {
   color: hsl(12, 20%, 44%);
   font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
 }
 
 /* Tablet view */
