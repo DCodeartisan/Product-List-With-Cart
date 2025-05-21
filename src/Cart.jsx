@@ -1,6 +1,12 @@
-import Cards from "./Cards"
-import CartData from "./CartData"
-function Cart({ handleAddToCart }) {
+import Cards from "./Cards";
+import CartData from "./CartData";
+
+function Cart({ handleAddToCart, updateQuantity, cartItems }) {
+  const getQuantity = (id) => {
+    const item = cartItems.find((i) => i.id === id);
+    return item ? item.quantity : 0;
+  };
+
   return (
     <div className="cart">
       <h1>Desserts</h1>
@@ -13,6 +19,9 @@ function Cart({ handleAddToCart }) {
             description={item.description}
             price={item.price}
             onAdd={() => handleAddToCart(item)}
+            onIncrement={() => updateQuantity(item.id, 1)}
+            onDecrement={() => updateQuantity(item.id, -1)}
+            quantity={getQuantity(item.id)}
           />
         ))}
       </div>
