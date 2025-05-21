@@ -240,7 +240,7 @@ body {
   max-height: 90vh;
   overflow-y: auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .modal-content-list {
@@ -267,7 +267,7 @@ body {
 }
 
 .modal-content-list-price {
-  padding-right: 70px;
+  padding-right: 100px;
 }
 
 .modal-content h2 {
